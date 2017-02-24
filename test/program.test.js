@@ -12,22 +12,23 @@ describe('Function transformCheckpoint', function() {
   it('Verify parameter is mutated with the fonction', function() {
     expect(transformCheckpoint(
     	{
-  id: 'whataw0nd3rful1d',
-  uuid: 'whataw0nd3rful1d',
-  address: 'unknown',
-  addressType: 'unknown',
-  connectable: true,
-  advertisement: {
-    localName: undefined,
-    txPowerLevel: undefined,
-    manufacturerData: undefined,
-    serviceData: [],
-    serviceUuids: [ 'abcd' ]
-  },
-  rssi: -66,
-  services: null,
-  state: 'outofcontrol'
-})).to.be.eql(true);
+			  id: 'whataw0nd3rful1d',
+			  uuid: 'whataw0nd3rful1d',
+			  address: 'unknown',
+			  addressType: 'unknown',
+			  connectable: true,
+			  advertisement: 
+			  {
+			    localName: undefined,
+			    txPowerLevel: undefined,
+			    manufacturerData: undefined,
+			    serviceData: [],
+			    serviceUuids: [ 'abcd' ]
+			  },
+			  rssi: -66,
+			  services: null,
+			  state: 'outofcontrol'
+			})).to.be.eql(true);
 		});
 
 });
